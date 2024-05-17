@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	background-color: #FFEFD5;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* ナビゲーション */
+.navbar {
+	background-color: lightgrey;
+}
+.navbar-brand {
+	font-size: 36px;
+	font-weight: bolder;
+}
+h1 {
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+.navbar-nav {
+	margin: 0 0 0 auto;
+}
+
+/* スライドショー */
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	object-fit: cover;
+}
+
+/* アコーディオン */
+#myAccordionFlush {
+	--bs-accordion-btn-icon: none;
+	--bs-accordion-btn-active-icon: none;
+	--bs-accordion-btn-focus-border-color: none;
+	--bs-accordion-btn-focus-box-shadow:none;
+	--bs-accordion-border-color: #FFEFD5;
+	--bs-accordion-active-color:none;
+	--bs-accordion-active-bg: #FFC7AF;
+}
+.accordion-header {
+	background-color: #FFEFD5;
+	text-align: center;
+}
+.accordion-button {
+	font-size: 28px;
+	background-color: #FFC7AF;
+}
+.accordion-body {
+	background-color: #FFEFD5;
+}
+.accordion-body ul li {
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+/* フェードイン */
+.fadeIn {
+  transform: translate3d(0, 0, 0);
+  transition: 2s;
+  opacity: 0;
+}
+.fadeIn.animated {
+  transform: translate3d(0, 0, 0);
+  opacity: 2;
+}
+
+/* メイン */
+h3 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.flex-img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.flex-img {
+	background-color: black;
+}
+.flex-text {
+	font-size: large;
+}
+
+/* アドレス部分 */
+.flex-address {
+	color: white;
+	background-color: black;
+}
+h4 {
+	font-size: 24px;
+	font-weight: bold;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.flex-address p {
+	margin: 20px 0;
+	font-size: small;
+}
+
+/* 店舗一覧 */
+h5 {
+	font-size: 20px;
+	text-align: center;
+}
+.row-eq-height {
+	display: flex;
+	flex-wrap: wrap;
+}
+.innerBox img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	padding: 10%;
+}
+.shopList p {
+	text-align: center;
+}
+
+/* フッター */
+footer ul {
+	display: flex;
+	justify-content: center;
+	background-color: darkgray;
+	gap: 20px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
